@@ -1,0 +1,581 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav {
+    /*border: 2px solid red;*/
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+    
+}
+
+.navContainer {
+    box-sizing: border-box;
+    height: inherit;
+
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: initial;
+}
+
+.logo {
+   /* border: 2px solid blue;*/
+    width: 150px;
+    height: 80px;
+    background-image: url("one-ui-seeklogo.svg");
+    background-position: center;
+    background-size: 150px;
+    
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+   
+}
+
+.logo h1 a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #162D52;
+    justify-content: flex-start;
+}
+
+.navItems {
+    /*border: 2px solid blue;*/
+    height: inherit;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    font-family: sans-serif;
+    color: black;
+}
+
+.navItems ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.navItems ul li{
+    list-style: none;
+
+    font-family: sans-serif;
+    color:black;
+   
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    position: sticky;
+  
+
+}
+
+
+
+
+
+h1{
+   font-family: "Asap Condensed", sans-serif;
+    font-size: 100px;
+    letter-spacing: -0.030em;
+    word-spacing: 2rem;
+   line-height: 85%;
+    text-align: center;
+    color: var(--token-a253b60a-3016-4045-8750-eb07a8b9bcd0, rgb(37, 37, 37));
+    text-transform: uppercase;
+    font-weight: 400;
+   margin-top: 150px;
+    
+      
+}
+
+.asap-condensed-medium {
+    font-family: "Asap Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+  p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  h3{
+    font-family: "Asap Condensed", sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 90px;
+    text-decoration: line-through;
+    color: #252525;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  
+    
+  h2 {
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 50px;
+    letter-spacing: -0.030em;
+    color: #252525;
+    justify-content: center;
+    display: flex;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    */* border-right: .12em solid orange;  The typwriter cursor */
+    white-space: wrap; /* Keeps the content on a single line */
+    margin-top: 20px auto; /* Gives that scrolling effect as the typing happens */
+ /* Adjust as needed */
+ 
+  }
+
+
+  @keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  
+  @keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 10em;
+    } /* adjust width based on content */
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+  
+  .terminal-loader {
+    border: 0.1em solid #333;
+    background-color: #1a1a1a;
+    color: #0f0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    padding: 1.5em 1em;
+    width: 12em;
+    
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  
+  .terminal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    background-color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0 0.4em;
+    box-sizing: border-box;
+  }
+  
+  .terminal-controls {
+    float: right;
+  }
+  
+  .control {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 0.4em;
+    border-radius: 50%;
+    background-color: #777;
+  }
+  
+  .control.close {
+    background-color: #e33;
+  }
+  
+  .control.minimize {
+    background-color: #ee0;
+  }
+  
+  .control.maximize {
+    background-color: #0b0;
+  }
+  
+  .terminal-title {
+    float: left;
+    line-height: 1.5em;
+    color: #eee;
+  }
+  
+  .text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2em solid green; /* Cursor */
+    animation: typeAndDelete 4s steps(11) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
+    margin-top: 1.5em;
+  }
+
+  .footer-h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: #000000B3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    word-spacing: 0%;
+  }
+  
+  .footer-span{
+    color: #000;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+  }
+
+.image-banner{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1rem;
+  }
+  
+  .contact-intro > * + * {
+    margin-top: 1rem;
+  }
+  
+  .contact-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+  }
+  
+  .contact-description {
+    color: rgb(107 114 128);
+  }
+  
+  .form-group-container {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .form-input::placeholder,
+  .form-textarea:focus-visible {
+    color: #6b7280;
+  }
+  
+  .form-input:focus-visible,
+  .form-textarea:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+  
+  .form-textarea {
+    min-height: 120px;
+  }
+  
+  .form-submit {
+    width: 100%;
+    margin-top: 1.2rem;
+    background-color: #3124ca;
+    color: #fff;
+    padding: 13px 5px;
+    border-radius: 0.375rem;
+  }
+  .Footer-head {
+ 
+    position: relative;
+    animation: mymove 4s infinite;
+  }
+  .Footer-head{
+    font-family: "Electrolize", sans-serif;
+    font-size: 100px;
+    color: black;
+    background-color: #2563eb;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-wrap: wrap;
+    word-spacing: 0%;
+    
+    
+  }
+
+
+.Footer-head:hover{
+    animation-play-state: running;
+    animation-play-state: paused;
+    color: white;
+    
+
+    
+}
+
+ 
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+
+
+
+/* Adjusted button size */
+
+
+
+    
+  
+
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.footer-og {
+    background: #000;
+    color: #0f0;
+    font-family: "Electrolize", sans-serif;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.footer-og ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+}
+
+.footer-og a {
+    position: absolute;
+    
+    
+    border-radius: 5px;
+}
+
+.L1 {
+    color: #0f0;
+    font-family: "Electrolize", sans-serif;
+    top: 20px;
+    left: 20%;
+    right: 70%;
+    
+}
+
+.L2 {
+    color: #0f0;
+    font-family: "Electrolize", sans-serif;
+    bottom: 60px;
+    left: 50%;
+    right: 50%;
+
+}
+
+.L3 {
+    color: #0f0;
+    font-family: "Electrolize", sans-serif;
+    top: 20px;
+    left: 70%;
+    right: 40%;
+}
+
+.L4 {
+    color: #0f0;
+    font-family: "Electrolize", sans-serif;
+    top: 140px;
+    left: 90%;
+}
+
+.L5 {
+    color: #0f0;
+    font-family: "Electrolize", sans-serif;
+    bottom: 40px;
+    left: 5%;
+    right: 90%;
+    
+}
+
+.insight{
+    font-family: "Electrolize", sans-serif;
+    font-size: 13px;
+   display: inline-flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 10px;
+    justify-content: space-evenly;
+
+   
+}
+
+.insight-1{
+  
+  margin-top: -100px;
+  
+  
+ 
+}
+ 
+.insight-2{
+  
+    margin-top: -100px;
+}
+
+.insight-3{
+  
+  margin-top: -100px;
+}
+
+.insight-4{
+  
+  margin-top: -100px;
+}
+
+.content{
+  text-align: center;
+}
+
+.h2-1{
+  text-align: center;
+  
+}
+
+
+
+
+
+
+
+
+
+  
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+  .electrolize-regular {
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+
+
+
+
+
+
+  
+
+
+@-webkit-keyframes marquee {
+    0% {
+        transform: translateX(var(--start));
+    }
+    to {
+        transform: translateX(var(--end));
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(var(--start));
+    }
+    to {
+        transform: translateX(var(--end));
+    }
+}
+
+
+li{
+
+    color: #162D52;
+}
