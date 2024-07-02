@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://oneui.icu/</loc>
+      <priority>1.00</priority>
+   </url>
+   <url>
+      <loc>https://oneui.icu/about-us/</loc>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://oneui.icu/services/</loc>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://oneui.icu/services/web-design/</loc>
+      <priority>0.64</priority>
+   </url>
+   <url>
+      <loc>https://oneui.icu/services/seo/</loc>
+      <priority>0.64</priority>
+   </url>
+   <url>
+      <loc>https://oneui.icu/services/content-marketing/</loc>
+      <priority>0.64</priority>
+   </url>
+   <url>
+      <loc>https://oneui.icu/contact/</loc>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://oneui.icu/blog/</loc>
+      <priority>0.80</priority>
+   </url>
+</urlset>
