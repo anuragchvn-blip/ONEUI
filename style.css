@@ -539,60 +539,7 @@ footer {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  max-width: 400px;
-  border-radius: 8px;
-  position: relative;
-}
 
-/* Close button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.container {
-  text-align: center;
-}
-
-input[type=email], button {
-  padding: 10px;
-  margin: 10px;
-  width: calc(100% - 24px);
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-#confirmationMessage {
-  margin-top: 10px;
-  font-style: italic;
-}
 
 .services-section{
 
