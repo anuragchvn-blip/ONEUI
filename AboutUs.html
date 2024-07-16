@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="AboutUs.css">
+</head>
+<body>
+    <nav class="fade-in">
+        <div class="navContainer">
+            <div class="logo">
+                <h1><a href="#nav"></a></h1>
+            </div>
+            <div class="navItems">
+                <ul>
+                    <li><a href="#nav"><span class="TEXT1">Project</span></a></li>
+                    <li><a href="#nav"><span class="TEXT1">Services</span></a></li>
+                    <li><a href="#nav"><span class="TEXT1">About</span></a></li>
+                    <li><a href="Accordion.html"><span class="TEXT1">Accordion</span></a></li>
+                    <li><a href="contact.html"><span class="TEXT1">Contact</span></a></li>
+                    <button class="btn-1">Get started</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <h2 class="About-h2 fade-in">All about OneUI</h2>
+        <h2 class="About-h2-1 fade-in">We created an ever-growing <br>design software with high <br>precision and the best<br> practices in mind </h2>
+    </div>
+
+    <div class="testimonials-container">
+        <div class="testimonial-1 fade-in">
+            <p>"This is a great service!"</p>
+            <span>- Aryan</span>
+        </div>
+        <div class="testimonial-2 fade-in">
+            <p>"Highly recommend to everyone."</p>
+            <span>- Jenny smith</span>
+        </div>
+        <div class="testimonial-3 fade-in">
+            <p>"Outstanding experience."</p>
+            <span>- Alex Brown</span>
+        </div>
+        <div class="testimonial-4 fade-in">
+            <p>"Exceptional quality.great UI" ..</p>
+            <span>- Aditya</span>
+        </div>
+        <div class="testimonial-5 fade-in">
+            <p>"I love the results!"</p>
+            <span>- Aarush</span>
+        </div>
+    </div>
+    <div style="height: 80px;"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.fade-in').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
