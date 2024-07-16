@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <h1 class="form-h1">Contact Us</h1>
+    <form action="https://api.web3forms.com/submit" method="POST" class="form-container fade-in">
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="418a0f00-0dc6-4882-a9be-06fbdd530cea">
+    
+        <!-- Form Inputs -->
+        <input type="text" name="name" required class="form-input" placeholder="Your Name">
+        <input type="email" name="email" required class="form-input" placeholder="Your Email">
+        <textarea name="message" required class="form-input" placeholder="Your Message"></textarea>
+    
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+    
+        <button type="submit" class="btn-2">Submit Form</button>
+    </form>
+    
+</body>
+</html>
+
+
+
+
